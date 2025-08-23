@@ -1,0 +1,24 @@
+{
+  "name": "cms-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-schema": "./lib/generate-schema.sh",
+    "start": "op run --env-file=./.env -- tsx update.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@directus/sdk": "^20.0.2",
+    "directus-typeforge": "^0.16.3",
+    "gray-matter": "^4.0.3",
+    "tsx": "^4.20.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  }
+}
