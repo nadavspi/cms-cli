@@ -24,4 +24,3 @@ export const getDirectusClient = async () => {
   }
   return directusClient;
 };
-

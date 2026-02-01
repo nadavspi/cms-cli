@@ -3,19 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate-schema": "./lib/generate-schema.sh",
-    "start": "op run --env-file=./.env -- tsx update.ts"
+    "start": "op run --env-file=./.env -- tsx update.ts",
+    "books": "op run --env-file=./.env -- tsx books.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@directus/sdk": "^20.0.2",
+    "@sindresorhus/slugify": "^3.0.0",
     "directus-typeforge": "^0.16.3",
     "gray-matter": "^4.0.3",
+    "mdast-util-from-markdown": "^2.0.2",
     "tsx": "^4.20.4"
   },
   "devDependencies": {
